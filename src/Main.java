@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Test 1: Ajout de valeurs dans le vecteur.");
-        Vecteur data = new Vecteur();
+        Liste data = new Liste();
         data.ajouter(0);
         data.ajouter(10);
         data.ajouter(20);
@@ -27,7 +27,7 @@ public class Main {
         System.out.println(data);
 
         System.out.println("Test 4: Ajouter des valeurs provenant d'un autre vecteur");
-        Vecteur v2 = new Vecteur();
+        Liste v2 = new Liste();
         v2.ajouter(1);
         v2.ajouter(2);
         v2.ajouter(3);
@@ -36,7 +36,7 @@ public class Main {
         System.out.println(data);
 
         System.out.println("Test 5: Ajouter des valeurs provenant d'un autre vecteur (vide)");
-        Vecteur v3 = new Vecteur();
+        Liste v3 = new Liste();
         data.ajouter(v3);
         System.out.println(data);
         System.out.println(data.getNbElements());
@@ -52,7 +52,7 @@ public class Main {
         System.out.println(data.trouver(2));
 
         System.out.println("Test 8: Trouver toutes les valeurs d'un autre vecteur");
-        Vecteur test8 = new Vecteur();
+        Liste test8 = new Liste();
         test8.ajouter(-10);
         test8.ajouter(40);
         test8.ajouter(1);
@@ -70,7 +70,7 @@ public class Main {
         System.out.println(data.getNbElements());
 
         System.out.println("Test 10: Supprimer valeurs d'un autre vecteur");
-        Vecteur test9 = new Vecteur();
+        Liste test9 = new Liste();
         test9.ajouter(0);
         test9.ajouter(5);
         test9.ajouter(60);

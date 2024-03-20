@@ -2,12 +2,12 @@ import static org.junit.jupiter.api.Assertions.*;
 /**Comment Faire?
  Sélectionner une méthode d'accès comme getNbElements > Generate > Test > Message d'erreur > ok > accepter nom > cocher tout > ok
  **/
-class VecteurTest {
+class ListeTest {
 
     @org.junit.jupiter.api.Test
     void getNbElements() {
         //Tester trois cas spéciaux, le cas ou il y en a aucun, le cas ou il y en a un seule et le cas ou il y en a deux
-        Vecteur test = new Vecteur();
+        Liste test = new Liste();
         assertEquals(0, test.getNbElements());
 
         test.ajouter(0);

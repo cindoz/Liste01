@@ -1,11 +1,11 @@
-public class Vecteur {
+public class Liste {
     private int[] tableau;
     private int nbElements;
 
     public static final int RATIO_AGRANDISSEMENT = 2;
     public static final int TAILLE_INITIALE = 5;
 
-    public Vecteur() {
+    public Liste() {
         tableau = new int[TAILLE_INITIALE];
         nbElements = 0;
     }
@@ -61,7 +61,7 @@ public class Vecteur {
         tableau = nouvelleTaille;
 
     }
-    public void ajouter(Vecteur autre) {
+    public void ajouter(Liste autre) {
         for (int i = 0; i < autre.nbElements; i++)
         //this(moi-même, alors ma propre méthode ajouter)
         this.ajouter(autre.tableau[i]);
@@ -77,7 +77,7 @@ public class Vecteur {
         //si jamais la boucle a été traversée et l'item n'a été trouvé dans aucune des positions, retourne -1
             return -1;
     }
-    public boolean trouverTout(Vecteur autre) {
+    public boolean trouverTout(Liste autre) {
         for (int i = 0; i < autre.getNbElements(); i++)
             if (this.trouver(autre.getElementAt(i)) == -1) {
                 return false;
@@ -99,7 +99,7 @@ public class Vecteur {
         nbElements--;
         return true;
     }
-    public boolean effacerAll(Vecteur autre) {
+    public boolean effacerAll(Liste autre) {
         boolean modifier = false;
         for (int i = 0; i < autre.getNbElements(); i++) {
             int valeurChercheer = autre.getElementAt(i);
@@ -111,7 +111,7 @@ public class Vecteur {
         }
         return modifier;
     }
-    public boolean effacerTout(Vecteur autre) {
+    public boolean effacerTout(Liste autre) {
         boolean modifie = false;
         for (int i = 0; i < autre.getNbElements(); i++) {
             int valeurCherchee = autre.getElementAt(i);
